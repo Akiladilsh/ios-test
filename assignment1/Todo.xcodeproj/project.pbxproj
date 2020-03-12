@@ -12,6 +12,10 @@
 		38E8BD7C21B865C300B02D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E8BD7A21B865C300B02D2E /* Main.storyboard */; };
 		38E8BD7E21B865C500B02D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E8BD7D21B865C500B02D2E /* Assets.xcassets */; };
 		38E8BD8121B865C500B02D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E8BD7F21B865C500B02D2E /* LaunchScreen.storyboard */; };
+		CC9CA7632418AB0A00199392 /* TodoListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CA7622418AB0900199392 /* TodoListVM.swift */; };
+		CC9CA7662418AB4200199392 /* Constants & Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CA7652418AB4200199392 /* Constants & Extensions.swift */; };
+		CC9CA7682418ACDF00199392 /* ToDoList Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CA7672418ACDF00199392 /* ToDoList Model.swift */; };
+		CCE75AE22418B739001B7AD3 /* Utill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE75AE12418B739001B7AD3 /* Utill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		38E8BD7D21B865C500B02D2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E8BD8021B865C500B02D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38E8BD8221B865C500B02D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9CA7622418AB0900199392 /* TodoListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVM.swift; sourceTree = "<group>"; };
+		CC9CA7652418AB4200199392 /* Constants & Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants & Extensions.swift"; sourceTree = "<group>"; };
+		CC9CA7672418ACDF00199392 /* ToDoList Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoList Model.swift"; sourceTree = "<group>"; };
+		CCE75AE12418B739001B7AD3 /* Utill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		38E8BD7521B865C300B02D2E /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				CCE75AE02418B72D001B7AD3 /* Utill */,
+				CC9CA7692418ACE300199392 /* Models */,
+				CC9CA7642418AB3300199392 /* Utils */,
+				CC9CA7612418A31800199392 /* Stroyboards */,
+				CC9CA7602418A30C00199392 /* Views & ViewModels */,
 				38E8BD7621B865C300B02D2E /* AppDelegate.swift */,
-				38E8BD7821B865C300B02D2E /* TodoListViewController.swift */,
-				38E8BD7A21B865C300B02D2E /* Main.storyboard */,
 				38E8BD7D21B865C500B02D2E /* Assets.xcassets */,
 				38E8BD7F21B865C500B02D2E /* LaunchScreen.storyboard */,
 				38E8BD8221B865C500B02D2E /* Info.plist */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		CC9CA7602418A30C00199392 /* Views & ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				38E8BD7821B865C300B02D2E /* TodoListViewController.swift */,
+				CC9CA7622418AB0900199392 /* TodoListVM.swift */,
+			);
+			path = "Views & ViewModels";
+			sourceTree = "<group>";
+		};
+		CC9CA7612418A31800199392 /* Stroyboards */ = {
+			isa = PBXGroup;
+			children = (
+				38E8BD7A21B865C300B02D2E /* Main.storyboard */,
+			);
+			path = Stroyboards;
+			sourceTree = "<group>";
+		};
+		CC9CA7642418AB3300199392 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC9CA7652418AB4200199392 /* Constants & Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CC9CA7692418ACE300199392 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC9CA7672418ACDF00199392 /* ToDoList Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCE75AE02418B72D001B7AD3 /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				CCE75AE12418B739001B7AD3 /* Utill.swift */,
+			);
+			path = Utill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE75AE22418B739001B7AD3 /* Utill.swift in Sources */,
 				38E8BD7921B865C300B02D2E /* TodoListViewController.swift in Sources */,
+				CC9CA7682418ACDF00199392 /* ToDoList Model.swift in Sources */,
+				CC9CA7632418AB0A00199392 /* TodoListVM.swift in Sources */,
 				38E8BD7721B865C300B02D2E /* AppDelegate.swift in Sources */,
+				CC9CA7662418AB4200199392 /* Constants & Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,16 +339,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4CU8RR224N;
+				DEVELOPMENT_TEAM = 3T5C6M29C2;
 				INFOPLIST_FILE = Todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.halflife.Todo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.akilaD.Todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,17 +356,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4CU8RR224N;
+				DEVELOPMENT_TEAM = 3T5C6M29C2;
 				INFOPLIST_FILE = Todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.halflife.Todo;
+				PRODUCT_BUNDLE_IDENTIFIER = io.akilaD.Todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
